@@ -14,20 +14,20 @@ s = 2.55 * (r / c)  # Relacio Molar
 t = c + r           # Sals Totals
 
 if t < 450 and c < 250 and r < 200:
-    y = (450 - t) * 70
+    y = (450 - t) * 70        # Sals Dobles que falta 
 else:
      y = 0
 
-if c < 250:
+if c < 250 and r > 200:
     z = r * 1.21
     u = z - c    # Clorur de Zenc que falta 
     u = u * 70
 else:
      u = 0
      
-if r < 200:
+if r < 200 and c > 250:
      v = 200 - r
-     v = v *70
+     v = v *70      # Clorur de Amoni que falta 
 else:
      v = 0
 
