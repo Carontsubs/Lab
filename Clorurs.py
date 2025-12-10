@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Llegir les dades de y des d'un fitxer CSV
-y = pd.read_csv('Lab\lectura_mv.csv', header=None).squeeze().to_numpy()
+y = pd.read_csv('Git\Lab\lectura_mv.csv', header=None).squeeze().to_numpy()
 
 # Crear x amb increments de 0.5 i ajustar longitud
 x = np.arange(0, 10.5, 0.5)[:len(y)]
