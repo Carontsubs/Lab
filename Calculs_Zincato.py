@@ -1,6 +1,6 @@
 # Recolecta de Dades
-A = float (input ("Concetracio Zincato gr/l: "))
-E = float (input ("Concetracio Zn Original gr/l: "))
+A = float (input ("Concentracio Zincato gr/l: "))
+E = float (input ("Concentracio Zn Original gr/l: "))
 C = float (input ("Concentracio final desitjada gr/l: "))
 B = float (input ("Volum final ml: ")) /1000
 
