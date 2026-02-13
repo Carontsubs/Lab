@@ -9,10 +9,14 @@ def main(page: ft.Page):
   vistes_dict = {}
   mv_list = [] # Llista per guardar els valors de la nova pestanya
 
-  # --- FUNCIÓ DE NETEJA AMB FOCUS ---
+# --- FUNCIÓ DE NETEJA AMB FOCUS (CORREGIDA) ---
   def netejar_camps(llista_camps, text_res):
     nonlocal mv_list
-    mv_list = [] # Buida la llista de MV
+    mv_list = [] # Buida la llista de dades numèriques
+    
+    # NOVETAT: Netejar la llista visual de la pestanya Clorurs
+    list_mv_view.controls = [] 
+    
     for camp in llista_camps:
       camp.value = ""
     
@@ -25,7 +29,6 @@ def main(page: ft.Page):
       llista_camps[0].focus()
       
     page.update()
-
   # --- ESCULTA DE TECLAT ---
   def on_keyboard(e: ft.KeyboardEvent):
     if e.key == "Backspace":
