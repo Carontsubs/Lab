@@ -8,6 +8,8 @@ __pycache__/
 *.log
 
 # Arxius especifics
-C:\Users\Usuario\Documents\LAB\python\Git\Lab\lectura_mv.csv
 lectura_mv.csv
-Lab\lectura_mv.csv
+
+#Carpetes
+\build
+\dist

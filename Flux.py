@@ -8,7 +8,7 @@ c = b * 2.085       # Clorur de Zenc
 d = c * 0.52        # Clorurs provinents del zenc
 
 q = P * 7.08        # Clorurs
-r = 1.509 * (q - d) # Clorur d'Amoni
+r = 1.509 * (q - d) # Clorur d'Amonia
 
 s = 2.55 * (r / c)  # Relacio Molar
 t = c + r           # Sals Totals
